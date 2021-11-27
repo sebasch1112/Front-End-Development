@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100;300;400;500&display=swap');
+
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);  
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+   
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -30%);
+    max-width: 700px;
+    border-radius: 20px;
+    height: 30%;
+    display: grid;
+}
+
+.carta{
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.carta h2{
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 27px;
+}
+
+.carta p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+    opacity: 0.6;
+}
+
+.carta button{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.sedans{
+    color: var(--Bright-orange);
+}
+.suvs{
+    color: var(--Dark-cyan);
+}
+.luxu{
+    color: var(--Very-dark-cyan);
+}
+
+.sedan{
+    background-color: var(--Bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+.suv{
+    background-color: var(--Dark-cyan);
+}
+.lux{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+@media (min-width: 975px){
+    .container{
+        display: flex;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 700px;
+        border-radius: 20px;
+        height: 40%;
+    }
+    .sedan{
+        border-radius: 10px 0 0 10px;
+    }
+    .lux{
+        border-radius: 0 10px 10px 0;
+    }
+}
