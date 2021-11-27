@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Open+Sans&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Open+Sans&family=Poppins:wght@400;600&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100;300;400;500&display=swap');
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    text-align: center;
+    background-color: var(--Violet);
+
+}
+
+.container{
+    height: 100%;
+}
+
+.subcontainer{
+    position: relative;
+
+    background: url("./images/bg-mobile.svg") no-repeat center/cover;
+
+    justify-content: center;
+}
+
+.logo{
+    margin: 20px;
+    text-align: left;
+    height: 40px;
+}
+
+.image img{
+    height: 40%;
+    width: 80%;
+    margin-top: 110px;
+    margin-bottom: 90px;
+}
+
+.text-content h2{
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 34px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.text-content p{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+button{
+    margin-top: 50px;
+    padding: 15px 90px;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: var(--Violet);
+}
+button:hover{
+    color: var(--Soft-Magenta);
+}
+
+
+footer{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (min-width: 750px){
+    .container{
+        display: flex;
+        background: url("./images/bg-desktop.svg") no-repeat center/cover;
+        position: absolute;
+    }
+    .subcontainer{
+        position: relative;
+        background: none;
+        justify-content: center;
+    }
+    .image img{
+        height: 110%;
+        width: 160%;
+        margin-top: 250px;
+        margin-bottom: 90px;
+        margin-left: 40px;
+    }
+    .text-content h2{
+        margin-top: 360px;
+        margin-left: 50px;
+        padding-left: 30%;
+        padding-right: 60px;
+        font-size: 34px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .text-content p{
+        margin-left: 50px;
+        padding-left: 30%;
+        padding-right: 50px;
+        margin-top: 20px;
+        font-size: 18px;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+    button{
+        margin-top: 50px;
+        margin-left: 30%;
+         border-radius: 25px;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: var(--Violet);
+    }
+     
+}
