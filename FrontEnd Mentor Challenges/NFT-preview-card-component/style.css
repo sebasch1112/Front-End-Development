@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Karla:wght@400;700&family=Lexend+Deca&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100;300;400;500&display=swap');
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue-main: hsl(217, 54%, 11%);
+--Very-dark-blue-container: hsl(216, 50%, 16%);
+--Very-dark-blue: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%)
+}
+
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Very-dark-blue-main);
+    font-family: 'Outfit', sans-serif;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 25px;
+    background-color: var(--Very-dark-blue-container);
+    transform: translate(-20%, -50%);
+}
+.container .foto{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    background: url("./images/image-equilibrium.jpg") no-repeat center/cover;
+}
+.container h2{
+    color: var(--White);
+    font-size: 600;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.container p{
+    color: var(--Soft-blue);
+    font-size: 400;
+    line-height: 1.5;
+}
+.container .partes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .partes .left{
+    padding-right: 52px;
+    display: flex;
+}
+
+.container .partes .left .ethe{
+    height: 50px;
+    width: 30px;
+    background: url("./images/icon-ethereum.svg") no-repeat center;
+}
+
+.container .partes .left p{
+    font-size: 400;
+    color: var(--Cyan);
+}
+
+.container .partes .right{
+    padding-left: 40px;
+    display: flex;
+}
+.container .partes .right .clock{
+    height: 50px;
+    width: 30px;
+    background: url("./images/icon-clock.svg") no-repeat center;
+}
+.container .partes .right p{
+    font-size: 400;
+}
+.last{
+    height: 30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-top: 0.7px solid var(--Soft-blue);
+    display: flex;
+    justify-content: start;
+}
+
+.last .pic{
+    height: 25px;
+    width: 25px;
+    background: url("./images/image-avatar.png") no-repeat center/cover;
+
+}
+.last p{
+    padding-right: 75px;
+}
+.last p span{
+    color: var(--White);
+}
+
+@media (max-width: 650px){
+    .container{
+        position: absolute;
+        width: 70%;
+        left: 50%;
+        top: 50%;
+        border-radius: 20px;
+        justify-content: center;
+        padding: 20px;
+        background-color: var(--Very-dark-blue-container);
+        transform: translate(-50%, -50%);
+    }
+}
